@@ -49,7 +49,7 @@ namespace UtilityBot.Controllers
                     string selectionResult = selectionCode switch
                     {
                         "chars" => $"Длина сообщения: {message.Text.Length} символов",
-                        "numbers" => $"Сумма введенных чисел: {SumCalculator.Calculation(message.Text, out string result)}",
+                        "numbers" => $"Сумма введенных чисел: {SumCalculator.Calculation(message.Text, out _)}",
                         _ => String.Empty
                     };
 
