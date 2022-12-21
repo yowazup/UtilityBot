@@ -8,8 +8,10 @@ namespace UtilityBot.Utilities
         public static string Calculation(string inputMessage, out string result)
         {
             result = null;
+            var test1 = inputMessage.Replace(" -","");
+            var test2 = test1.Replace(" ","");
 
-            if (int.TryParse(string.Concat(inputMessage.Where(c => !char.IsWhiteSpace(c))), out int success))
+            if (int.TryParse(test2, out int success))
             {
                 string[] numbers = inputMessage.Split(" ");
                 int sum = 0;
