@@ -7,7 +7,7 @@ namespace UtilityBot.Utilities
 
         public static string Calculation(string inputMessage, out string result)
         {
-            result = null;
+            result = String.Empty;
             var test1 = inputMessage.Replace(" -","");
             var test2 = test1.Replace(" ","");
 
